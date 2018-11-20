@@ -19,6 +19,9 @@ P, L, U = linalg.lu(A)
 
 print(A.dot(b))
 
+Y = linalg.solve_triangular(L, b, lower=True)
+X = linalg.solve_triangular(U, Y)
+print(X)
 
 
 
