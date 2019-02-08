@@ -37,7 +37,7 @@ def compress(original_image, img, k): # k like kuality
     axarr[0].set_title("Compressed")
     axarr[1].imshow(original_image)
     axarr[1].set_title("Original")
-    quality = Slider(axqual, "Quality", 1, 512, valinit=256)
+    quality = Slider(axqual, "Quality", 1, 256, valinit=100)
     quality.on_changed(update)
     plt.show()
 
